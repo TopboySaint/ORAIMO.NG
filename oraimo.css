@@ -91,3 +91,32 @@
     text-decoration: none;
     font-family:"Avenir-Black";
 }
+.bttn{
+    background: #d5d5d5;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    transform: translate(30px,300px);
+}
+.bttn2{
+    background: #d5d5d5;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    transform: translate(-30px,300px);
+}
+.bttn3{
+    background-color: rgba(213,213,213,0.1);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    transform: translate(30px,250px);
+}
+.bttn4{
+    background: #d5d5d5;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: rgba(213,213,213,0.1);
+    transform: translate(-30px,250px);
+}
