@@ -120,3 +120,35 @@
     background-color: rgba(213,213,213,0.1);
     transform: translate(-30px,250px);
 }
+.backo{
+    background-color: #f8f8f8;
+}
+#anime{
+    height: 10px;
+}
+#anime a{
+    color: #111;
+    display: block;
+    width: 18rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family:"Avenir-Black";
+}
+#anime:hover a{
+    animation: title 0.3s forwards;
+    text-overflow: clip;
+}
+@keyframes{
+    from{
+        width: 0rem;
+    }
+    to{
+        width: 18rem;
+    }
+}
+
