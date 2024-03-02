@@ -151,4 +151,34 @@
         width: 18rem;
     }
 }
-
+.voice{
+    font-size: 12px;
+}
+#detaimg{
+    width: 18px;
+    height: 18px;
+}
+.review{
+    color: #111;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family:"Avenir-Black";
+}
+.price{
+    color: #111;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family:"Avenir-Black";
+}
+.oldprice{
+    color: gray;
+    font-size: 13px;
+    text-decoration:line-through;
+}
+.awards{
+    height: 430px;
+    background-size: cover;
+    background-image: url(Images/new-arrival-l.jpg);
+}
