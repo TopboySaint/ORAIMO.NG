@@ -130,8 +130,8 @@
     color: #111;
     display: block;
     width: 18rem;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
+    /* overflow-y: hidden; */
     white-space: nowrap;
     text-overflow: ellipsis;
     text-decoration: none;
@@ -143,12 +143,12 @@
     animation: title 0.3s forwards;
     text-overflow: clip;
 }
-@keyframes{
+@keyframes title{
     from{
-        width: 0rem;
+        transform: translateX(0px);
     }
     to{
-        width: 18rem;
+        /* transform: translateX(-50px); */
     }
 }
 .voice{
@@ -184,25 +184,25 @@
     background-image: url(Images/new-arrival-l.jpg);
 }
 .green{
-    height: 25px;
-    width: 120px;
+    height: 22px;
+    width: 115px;
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
     background: #82e600;
     border-radius: 20px;
-    padding-top: 3px;
+    padding-top: 2px;
     transform: translate(1.8px,2.5px);
     font-family: Arial, sans-serif;
 }
 .outer{
     border-radius: 20px;
-    height: 33.5px;
-    width: 128px;
+    height: 31px;
+    width: 123px;
     border: 2px solid #82e600;
     transform: translate(-5px,-490px);
 }
 .trust{
-    height: 425px;
+    height: 420px;
     background-size: contain ;
     background-repeat: no-repeat;
     background-image: url(Images/banner-wide-l.jpg);
@@ -210,6 +210,125 @@
 .from{
     color: #000;
     font-size: 20px;
+    font-weight: 400;
+    font-family:"Avenir-Black";
+}
+.whybuy{
+    background: #f8f8f8;
+}
+.customerserv{
+    width: 35%;
+}
+.customer{
+    width: 30%;
+    /* height: 600px; */
+}
+.access{
+    height: 500px;
+    background: #fff;
+    border-radius: 15px;
+    background-size: contain;
+    background-image: url(Images/cs-women-s.png);
+}
+.offline{
+    height: 250px;
+    background: #fff;
+    border-radius: 15px;
+    background-size: contain;
+    background-image: url(Images/cart-care-s.png);
+}
+.wording{
+    font-size:16px;
+    font-weight:400;
+    font-family:"Avenir-Black";
+}
+.year{
+    height: 245px;
+    border-radius: 15px;
+    background: #fff;
+    background-size: contain;
+    background-image: url(Images/1-year-warranty-s.png);
+
+}
+.free{
+    height: 245px;
+    background: #fff;
+    border-radius: 15px;
+    background-size: contain;
+    background-image: url(Images/free-shipping-s.png);
+
+}
+.coin{
+    height: 245px;
+    background: #fff;
+    border-radius: 15px;
+    background-size: contain;
+    background-image: url(Images/point-s.png);
+}
+.authent{
+    height: 250px;
+    background: #fff;
+    border-radius: 15px;
+    background-size: contain;
+    background-image: url(Images/authenticity-&-best-price-s.png);
+}
+.club{
+    height: 500px;
+    background: #fff;
+    border-radius: 15px;
+}
+.oraimoclub{
+    color: #111;
+    font-size: 36px;
+    font-weight: 400;
+    font-family:"Avenir-Black";
+}
+.follow{
+    height: 33px;
+    width: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-family:"Avenir-Black";
+    background: #000;
+}
+.hashoraimo{
+    font-size: 20px;
+    font-weight: 400;
+}
+.newsletter{
+    color: #111;
+    font-size: 24px;
+    font-weight: 400;
+    font-family:"Avenir-Black";
+}
+.inputype{
+    width: 800px; 
+    outline: none;
+    transform: translate(250px,30px); 
+}
+.button2 img{
+    width: 30px;
+    height: 30px;
+}
+.button2{
+    width: 60px;
+    height: 58px;
+    background: #111;
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    transform: translate(200px,28px); 
+}
+.getthe{
+    color: #333;
+    font-size: 19px;
+    font-weight: 400;
+}
+.bgbg{
+    background: #191919;
+}
+.ffus{
+    color: #fff;
+    font-size: 16px;
     font-weight: 400;
     font-family:"Avenir-Black";
 }
