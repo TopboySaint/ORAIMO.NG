@@ -1,5 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/b78d933f8aa6b9284c1d3efd3db0a9b9?family=Avenir-Black);
-/* @import url('https://fonts.cdnfonts.com/css/avenir'); */
+body{
+    scroll-behavior: smooth;
+}
 .marquee{
     color: #fff;
     font-size: 16px;
@@ -136,7 +138,7 @@
 }
 .card-title {
     text-overflow: ellipsis;
-    transition: 1s;
+    transition: 3s;
 }
 .card-body {
     white-space: nowrap;
@@ -217,13 +219,13 @@
 }
 .customer{
     width: 30%;
-    /* height: 600px; */
 }
 .access{
     height: 500px;
     background: #fff;
     border-radius: 15px;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url(Images/cs-women-s.png);
 }
 .offline{
@@ -231,6 +233,7 @@
     background: #fff;
     border-radius: 15px;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url(Images/cart-care-s.png);
 }
 .wording{
@@ -243,6 +246,7 @@
     border-radius: 15px;
     background: #fff;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url(Images/1-year-warranty-s.png);
 
 }
@@ -251,6 +255,7 @@
     background: #fff;
     border-radius: 15px;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url(Images/free-shipping-s.png);
 
 }
@@ -259,6 +264,7 @@
     background: #fff;
     border-radius: 15px;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url(Images/point-s.png);
 }
 .authent{
@@ -266,6 +272,7 @@
     background: #fff;
     border-radius: 15px;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url(Images/authenticity-&-best-price-s.png);
 }
 .club{
