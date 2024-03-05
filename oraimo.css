@@ -129,27 +129,23 @@
 #anime a{
     color: #111;
     display: block;
-    width: 18rem;
-    overflow: hidden;
-    /* overflow-y: hidden; */
-    white-space: nowrap;
-    text-overflow: ellipsis;
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
     font-family:"Avenir-Black";
 }
-#anime:hover a{
-    animation: title 0.3s forwards;
-    text-overflow: clip;
+.card-title {
+    text-overflow: ellipsis;
+    transition: 1s;
 }
-@keyframes title{
-    from{
-        transform: translateX(0px);
-    }
-    to{
-        /* transform: translateX(-50px); */
-    }
+.card-body {
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card-body:hover .card-title {
+    transform: translateX(-50%);
 }
 .voice{
     font-size: 12px;
@@ -330,5 +326,24 @@
     color: #fff;
     font-size: 16px;
     font-weight: 400;
+    font-family:"Avenir-Black";
+}
+.foot{
+    width: 300px;
+}
+.foot a{
+    display: block;
+    color: #B3B3B3;
+    font-weight: 400;
+    padding-top: 20px;
+    text-decoration: none;
+}
+.foot p{
+    color: #fff;
+    padding-top: 10px;
+}
+.foot h5{
+    color: #fff;
+    font-size: 16px;
     font-family:"Avenir-Black";
 }
