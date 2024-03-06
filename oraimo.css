@@ -1,16 +1,20 @@
 @import url(https://db.onlinewebfonts.com/c/b78d933f8aa6b9284c1d3efd3db0a9b9?family=Avenir-Black);
+
 body {
   scroll-behavior: smooth;
 }
+
 .marquee {
   color: #fff;
   font-size: 16px;
 }
+
 .marq {
   height: 50px;
   padding-top: 10px;
   background: #343434;
 }
+
 .marq button {
   transform: translate(1290px, -31px);
   background: #343434;
@@ -21,31 +25,38 @@ body {
   width: 40px;
   height: 30px;
 }
+
 .navbar {
   padding: 20px;
   background: #1d1d1d;
 }
+
 #link {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
   font-family: "Avenir-Black";
 }
+
 #link:hover {
   color: #82e600;
 }
+
 .icons img {
   width: 20px;
   height: 20px;
 }
+
 .hassle {
   width: 400px;
   height: 80px;
 }
+
 .shipping {
   background: #fafafa;
   border-radius: 15px;
 }
+
 .audio {
   width: 620px;
   height: 350px;
@@ -53,6 +64,7 @@ body {
   background-size: cover;
   border-radius: 10px;
 }
+
 .personal {
   width: 620px;
   height: 350px;
@@ -60,6 +72,7 @@ body {
   background-size: cover;
   border-radius: 10px;
 }
+
 .power {
   width: 620px;
   height: 350px;
@@ -67,6 +80,7 @@ body {
   background-size: cover;
   border-radius: 10px;
 }
+
 .smart {
   width: 620px;
   height: 350px;
@@ -74,20 +88,34 @@ body {
   background-size: cover;
   border-radius: 10px;
 }
+
 .flex {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .words {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
 }
+
+.products:hover img {
+  transition: 0.2s ease;
+  transform: rotate(180deg);
+}
+
+.support:hover #icon {
+  transition: 0.2s ease;
+  transform: rotate(180deg);
+}
+
 .support:hover .hovery {
   display: block;
 }
+
 .hovery {
   position: absolute;
   left: 670px;
@@ -134,6 +162,11 @@ body {
 
 .visit a {
   text-decoration: none;
+}
+
+.hotnew:hover img {
+  transition: 0.2s ease;
+  transform: rotate(180deg);
 }
 
 .hotnew:hover .arrivalhover {
@@ -191,6 +224,7 @@ body {
   border-radius: 100%;
   transform: translate(30px, 300px);
 }
+
 .bttn2 {
   background: #d5d5d5;
   height: 40px;
@@ -198,6 +232,7 @@ body {
   border-radius: 100%;
   transform: translate(-30px, 300px);
 }
+
 .bttn3 {
   background-color: rgba(213, 213, 213, 0.1);
   height: 40px;
@@ -205,6 +240,7 @@ body {
   border-radius: 100%;
   transform: translate(30px, 250px);
 }
+
 .bttn4 {
   background: #d5d5d5;
   height: 40px;
@@ -213,12 +249,15 @@ body {
   background-color: rgba(213, 213, 213, 0.1);
   transform: translate(-30px, 250px);
 }
+
 .backo {
   background-color: #f8f8f8;
 }
+
 #anime {
   height: 10px;
 }
+
 #anime a {
   color: #111;
   display: block;
@@ -227,10 +266,12 @@ body {
   font-weight: 400;
   font-family: "Avenir-Black";
 }
+
 .card-title {
   text-overflow: ellipsis;
   transition: 3s;
 }
+
 .card-body {
   white-space: nowrap;
   overflow: hidden;
@@ -239,13 +280,16 @@ body {
 .card-body:hover .card-title {
   transform: translateX(-50%);
 }
+
 .voice {
   font-size: 12px;
 }
+
 #detaimg {
   width: 18px;
   height: 18px;
 }
+
 .review {
   color: #111;
   font-size: 13px;
@@ -253,6 +297,7 @@ body {
   text-decoration: none;
   font-family: "Avenir-Black";
 }
+
 .price {
   color: #111;
   font-size: 18px;
@@ -260,56 +305,78 @@ body {
   text-decoration: none;
   font-family: "Avenir-Black";
 }
+
 .oldprice {
   color: gray;
   font-size: 13px;
   text-decoration: line-through;
 }
+
 .awards {
   height: 425px;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(Images/new-arrival-l.jpg);
 }
+
 .green {
-  height: 22px;
+  height: 20px;
   width: 115px;
   color: #fff;
-  font-size: 12px;
+  font-size: 11px;
   background: #82e600;
   border-radius: 20px;
   padding-top: 2px;
-  transform: translate(1.8px, 2.5px);
+  transform: translate(1.8px, 1.5px);
   font-family: Arial, sans-serif;
 }
+
 .outer {
   border-radius: 20px;
-  height: 31px;
+  height: 27.5px;
   width: 123px;
   border: 2px solid #82e600;
-  transform: translate(-5px, -490px);
+  position: absolute;
+  bottom: 478px;
+  transform: translateX(-8px);
 }
+
+.outerfirst {
+  border-radius: 20px;
+  height: 27px;
+  width: 123px;
+  border: 2px solid #82e600;
+  position: absolute;
+  bottom: 503px;
+  transform: translateX(-8px);
+}
+
 .trust {
   height: 420px;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(Images/banner-wide-l.jpg);
 }
+
 .from {
   color: #000;
   font-size: 20px;
   font-weight: 400;
   font-family: "Avenir-Black";
 }
+
 .whybuy {
   background: #f8f8f8;
 }
+
 .customerserv {
   width: 35%;
 }
+
 .customer {
   width: 30%;
 }
+
 .access {
   height: 500px;
   background: #fff;
@@ -318,6 +385,7 @@ body {
   background-repeat: no-repeat;
   background-image: url(Images/cs-women-s.png);
 }
+
 .offline {
   height: 250px;
   background: #fff;
@@ -326,11 +394,13 @@ body {
   background-repeat: no-repeat;
   background-image: url(Images/cart-care-s.png);
 }
+
 .wording {
   font-size: 16px;
   font-weight: 400;
   font-family: "Avenir-Black";
 }
+
 .year {
   height: 245px;
   border-radius: 15px;
@@ -339,6 +409,7 @@ body {
   background-repeat: no-repeat;
   background-image: url(Images/1-year-warranty-s.png);
 }
+
 .free {
   height: 245px;
   background: #fff;
@@ -347,6 +418,7 @@ body {
   background-repeat: no-repeat;
   background-image: url(Images/free-shipping-s.png);
 }
+
 .coin {
   height: 245px;
   background: #fff;
@@ -355,6 +427,7 @@ body {
   background-repeat: no-repeat;
   background-image: url(Images/point-s.png);
 }
+
 .authent {
   height: 250px;
   background: #fff;
@@ -363,17 +436,20 @@ body {
   background-repeat: no-repeat;
   background-image: url(Images/authenticity-&-best-price-s.png);
 }
+
 .club {
   height: 500px;
   background: #fff;
   border-radius: 15px;
 }
+
 .oraimoclub {
   color: #111;
   font-size: 36px;
   font-weight: 400;
   font-family: "Avenir-Black";
 }
+
 .follow {
   height: 33px;
   width: 100px;
@@ -382,25 +458,30 @@ body {
   font-family: "Avenir-Black";
   background: #000;
 }
+
 .hashoraimo {
   font-size: 20px;
   font-weight: 400;
 }
+
 .newsletter {
   color: #111;
   font-size: 24px;
   font-weight: 400;
   font-family: "Avenir-Black";
 }
+
 .inputype {
   width: 800px;
   outline: none;
   transform: translate(250px, 30px);
 }
+
 .button2 img {
   width: 30px;
   height: 30px;
 }
+
 .button2 {
   width: 60px;
   height: 58px;
@@ -409,23 +490,28 @@ body {
   border-radius: 0px 25px 25px 0px;
   transform: translate(200px, 28px);
 }
+
 .getthe {
   color: #333;
   font-size: 19px;
   font-weight: 400;
 }
+
 .bgbg {
   background: #191919;
 }
+
 .ffus {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
   font-family: "Avenir-Black";
 }
+
 .foot {
   width: 300px;
 }
+
 .foot a {
   display: block;
   color: #b3b3b3;
@@ -433,10 +519,12 @@ body {
   padding-top: 20px;
   text-decoration: none;
 }
+
 .foot p {
   color: #fff;
   padding-top: 10px;
 }
+
 .foot h5 {
   color: #fff;
   font-size: 16px;
