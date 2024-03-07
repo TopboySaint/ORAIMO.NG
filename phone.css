@@ -1,0 +1,74 @@
+@media (max-width:480px){
+    #marq{
+        width: 100%;
+    }
+
+    #firstbutton{
+        /* transform: translate(-100px,0px); */
+        position: absolute;
+        right: 500px !important;
+    }
+    .first-div-img img{
+        width: 150px;
+    }
+
+    .first-div-last {
+        position: absolute;
+        left: 230px !important;
+        bottom: 20px;
+    }
+
+    .first-div-last img{
+        width: 20px !important;
+    }
+    .flex{
+        display: flex !important;
+    }
+
+    .audio {
+        width: 170px;
+        height: 100px;
+        background-image: url(Images/930-490.jpg);
+        background-size: cover;
+        border-radius: 10px;
+      }
+      
+      .personal {
+        width: 170px;
+        height: 100px;
+        background-image: url(Images/VCG211288602089.png);
+        background-size: cover;
+        border-radius: 10px;
+      }
+      
+      .power {
+        width: 170px;
+        height: 100px;
+        background-image: url(Images/ad-power.jpg);
+        background-size: cover;
+        border-radius: 10px;
+      }
+      
+      .smart {
+        width: 170px;
+        height: 100px;
+        background-image: url(Images/20231127-105044.jpg);
+        background-size: cover;
+        border-radius: 10px;
+      }
+      
+      .words {
+        color: #fff;
+        font-size: 10px;
+        font-weight: 400;
+      }
+
+      .awards {
+        width: 100% !important;
+        height: 425px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(Images/WhatsApp\ Image\ 2024-03-07\ at\ 07.06.26_19215d24.jpg);
+      }
+
+}

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="oraimo.css">
   <link rel="stylesheet" href="bootstrap.js">
+  <link rel="stylesheet" href="phone.css">
   <link rel="shortcut icon" type="image/x-icon" href="Images/downloadfav.png" />
 </head>
 
@@ -17,17 +18,16 @@
   <div class="container-fluid marq" id="marq">
     <marquee behavior="" direction=""><span class="marquee">Welcome to oraimo official eshop of Nigeria. FREE SHIPPING
         over ₦9000 in Lagos!</span></marquee>
-    <button onclick="document.getElementById('marq').style.display='none'">X</button>
+    <button onclick="document.getElementById('marq').style.display='none'" id="firstbutton">X</button>
   </div>
 
   <!-- Navigation Bar -->
 
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar">
     <div class="container-fluid">
-      <a href=""><img src="Images/logo.png" alt="OraimoLogo" class="ps-5 pe-5"></a>
+      <a href="" class="first-div-img nav-link"><img src="Images/logo.png" alt="OraimoLogo" class="ps-lg-5 pe-5"></a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigate">
+        <ul class="nav-link me-auto mb-2 mb-lg-0 d-lg-flex d-none">
 
           <li class="nav-item">
             <a class="nav-link active ps-5" aria-current="page" href="#" id="link">Home</a>
@@ -77,15 +77,13 @@
           </li>
         </ul>
 
-        <div class="d-flex icons pe-3">
-          <a href=""><img src="Images/icon-search.svg" alt="search" class="me-5"></a>
-          <a href=""><img src="Images/icon-cart.svg" alt="cart" class="me-5"></a>
-          <a href=""><img src="Images/icon-user.svg" alt="user" class="me-5"></a>
+        <div class="nav-item d-flex icons pe-3 first-div-last">
+          <a href="" class="nav-link"><img src="Images/icon-search.svg" alt="search" class="me-lg-5 me-3"></a>
+          <a href="" class="nav-link"><img src="Images/icon-cart.svg" alt="cart" class="me-lg-5 me-3"></a>
+          <a href="" class="nav-link"><img src="Images/icon-user.svg" alt="user" class="me-lg-5 me-3"></a>
         </div>
-      </div>
     </div>
   </nav>
-  </div>
 
   <!--Banners Carousel Section -->
 
@@ -150,7 +148,30 @@
 
   <!-- Some Little Information -->
 
-  <div class="container-fluid p-4">
+  <div id="carouselExampleSlidesOnly" class="carousel slide d-lg-none" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="hassle pt-4 ps-4">
+          <img src="Images/548ba05e3ebd50c37607b010723b4658.png" alt="shipping">
+          <span>Free Shipping over ₦9000 in Lagos</span>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hassle pt-4 ps-4">
+          <img src="Images/21b2d03f844d825fc5dd8c827831745f.png" alt="delivery">
+          <span>Cash on Delivery</span>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hassle pt-4 ps-4">
+          <img src="Images/674d32382b4148f5b16922b0134a9ee1.png" alt="warranty">
+          <span>Hassle-Free Warranty</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-4 d-lg-block d-none">
     <div class="shipping d-flex gap-5">
       <div class="hassle pt-4 ps-5">
         <img src="Images/548ba05e3ebd50c37607b010723b4658.png" alt="shipping">
@@ -167,33 +188,34 @@
         <span>Hassle-Free Warranty</span>
       </div>
     </div>
+  </div>
 
-    <div class="flex pt-4">
-      <div class="audio">
-        <p class="ps-5 pt-4 words">Audio</p>
-      </div>
+  <div class="d-flex flex gap-3 pt-4 bros">
+    <div class="audio">
+      <p class="ps-lg-5 pt-lg-4 p-2 words">Audio</p>
+    </div>
 
-      <div class="personal">
-        <p class="ps-5 pt-4 words">Personal Care</p>
-      </div>
+    <div class="personal">
+      <p class="ps-lg-5 pt-lg-4 words p-2">Personal Care</p>
+    </div>
+  </div>
+  <div class="d-flex flex gap-3 pt-4 bros">
+    <div class="power">
+      <p class="ps-lg-5 pt-lg-4 words p-2">Power</p>
+    </div>
 
-      <div class="power">
-        <p class="ps-5 pt-4 words">Power</p>
-      </div>
-
-      <div class="smart">
-        <p class="ps-5 pt-4 words">Smart & Office</p>
-      </div>
+    <div class="smart">
+      <p class="ps-lg-5 pt-lg-4 words p-2">Smart & Office</p>
     </div>
   </div>
 
   <!-- Product Display -->
 
-  <div class="container-fluid pb-5">
+  <div class="container-fluid pb-5 mt-5">
     <p class="text-center pb-4 ceer"><a href="">Product Display</a></p>
 
     <div>
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleAutoplaying" class="carousel slide d-lg-none" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
 
@@ -253,7 +275,14 @@
                   <a href="#" class="card-link ps-4 oldprice">₦30000</a>
                 </div>
               </div>
+            </div>
+          </div>
 
+          <div class="carousel-item">
+
+                <!-- Cards Section -->
+    
+             <div class="d-flex gap-3 justify-content-center">
 
               <div class="card border-0" style="width: 19rem;">
                 <img src="Images/opb-p500qn.png" class="card-img-top backo" alt="...">
@@ -369,8 +398,14 @@
                   <a href="#" class="card-link ps-4 oldprice">₦36500</a>
                 </div>
               </div>
+            </div>
+          </div>
 
+          <div class="carousel-item">
 
+            <!-- Cards Section -->
+
+            <div class="d-flex gap-3 justify-content-center">
               <div class="card border-0" style="width: 19rem;">
                 <img src="Images/810.png" class="card-img-top backo" alt="...">
                 <div class="card-body">
@@ -483,8 +518,14 @@
                   <a href="#" class="card-link ps-4 oldprice">₦81500</a>
                 </div>
               </div>
+            </div>
+          </div>
 
+          <div class="carousel-item">
 
+            <!-- Cards Section -->
+
+            <div class="d-flex gap-3 justify-content-center">
               <div class="card border-0" style="width: 19rem;">
                 <img src="Images/OPC-CL30.png" class="card-img-top backo" alt="...">
                 <div class="card-body">
@@ -558,6 +599,371 @@
       </div>
     </div>
   </div>
+
+  <div id="carouselExampleAutoplaying" class="carousel slide d-lg-block d-none" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <!-- Cards Section -->
+
+        <div class="d-flex gap-4 justify-content-center">
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/OPC-CL30.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">Smart Clipper 2 Professional Hair Clipper</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/extra-long-lasting-battery.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">2.5 hrs Runtime</span></li>
+              <li class="list-group-item"><img src="Images/designed-for-all-types-of-hair.svg" alt=""
+                  id="detaimg"><span class="voice ps-2">Precise Blades for All Hair Types</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(510)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦30800</a>
+              <a href="#" class="card-link ps-4 oldprice">₦32400</a>
+              <div class="outerfirst">
+                <div class="text-center green">NEW ARRIVAL</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/OTW-340-680-1.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">Airbuds 4 ENC True Wireless Earbuds</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/36-hr-long-playtime.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">38-Hr Long Playtime</span></li>
+              <li class="list-group-item"><img src="Images/customize-your-listening.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">oraimo Sound APP</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(51)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦20500</a>
+              <a href="#" class="card-link ps-4 oldprice">₦30000</a>
+            </div>
+          </div>
+
+
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/opb-p500qn.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">PowerBox 500 50000mAh 22.5W Power Bank</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/big-digital-display.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">Big Digital Display</span></li>
+              <li class="list-group-item"><img src="Images/four-output-ports.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">Four Outputs Ports</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(289)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦68400</a>
+              <a href="#" class="card-link ps-4 oldprice">₦80000</a>
+            </div>
+          </div>
+
+
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/OHP-610S-A1-680-removebg-preview.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">BoomPop2S ENC Over-Ear Wireless Headphones</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/gesture_5f-drag-left-right.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">Gesture control</span></li>
+              <li class="list-group-item"><img src="Images/encicon.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">ENC HD Voice in Calls</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(52)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦35900</a>
+              <a href="#" class="card-link ps-4 oldprice">₦38500</a>
+              <div class="outerfirst">
+                <div class="text-center green">NEW ARRIVAL</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End of first four cards -->
+
+        </div>
+      </div>
+
+      <div class="carousel-item">
+
+        <!-- Cards Section -->
+
+        <div class="d-flex gap-3 justify-content-center">
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/oeb-e04d.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">Riff 2 Half-in Ear True Wireless Earbuds</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/encicon.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">4-mic ENC HD Voice in Calls</span></li>
+              <li class="list-group-item"><img src="Images/20-hr-long-playtime.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">30Hr Playtime (Lights On)</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(339)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦26700</a>
+              <a href="#" class="card-link ps-4 oldprice">₦30500</a>
+            </div>
+          </div>
+
+
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/oeb-e104dc-black.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">FreePods 3C True Wireless Earbuds</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/36-hr-long-playtime.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">36-Hr Long Playtime</span></li>
+              <li class="list-group-item"><img src="Images/encicon.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">4-mic ENC HD Voice in Calls</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(258)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦31600</a>
+              <a href="#" class="card-link ps-4 oldprice">₦36500</a>
+            </div>
+          </div>
+
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/810.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">Watch ES 2 1.95" AMOLED IP68 Smart Watch</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/bluetooth-call.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">Bluetooth Call</span></li>
+              <li class="list-group-item"><img src="Images/ips-colour-touchscreen.svg" alt="" id="detaimg"><span
+                  class="voice ps-2"> 1.95'' AMOLED Display</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(106)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦45500</a>
+              <a href="#" class="card-link ps-4 oldprice">₦55000</a>
+            </div>
+          </div>
+
+
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/oeb-e06dn.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">Rhyme ANC True Wireless Earbuds</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/encicon.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">4-mic ENC HD Voice in Calls</span></li>
+              <li class="list-group-item"><img src="Images/pro-hybrid-noise-cancellation-technology.svg" alt=""
+                  id="detaimg"><span class="voice ps-2">30dB ANC Noise Cancellation</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(519)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦36900</a>
+              <a href="#" class="card-link ps-4 oldprice">₦38000</a>
+            </div>
+          </div>
+
+          <!-- End of second four cards -->
+
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+
+        <!-- Cards Section -->
+
+        <div class="d-flex gap-3 justify-content-center">
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/otw-330-black.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">FreePods Lite ENC True Wireless Earbuds</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/20-hr-long-playtime.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">40-Hr Playtime (Lights On)</span></li>
+              <li class="list-group-item"><img src="Images/hd-voice-in-calls.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">HD Voice in Calls</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(482)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦18400</a>
+              <a href="#" class="card-link ps-4 oldprice">₦19900</a>
+            </div>
+          </div>
+
+
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/obs-75d.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">Boom 30W Wireless Speaker</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/20-hr-long-playtime.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">6-Hr Playtime (Lights On)</span></li>
+              <li class="list-group-item"><img src="Images/dynamic-party-light-effects.svg" alt=""
+                  id="detaimg"><span class="voice ps-2">Dynamic Party Light Effects</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(355)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦78700</a>
+              <a href="#" class="card-link ps-4 oldprice">₦81500</a>
+            </div>
+          </div>
+
+
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/OPC-CL30.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">Smart Clipper 2 Professional Hair Clipper</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/extra-long-lasting-battery.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">2.5 hrs Runtime</span></li>
+              <li class="list-group-item"><img src="Images/designed-for-all-types-of-hair.svg" alt=""
+                  id="detaimg"><span class="voice ps-2">Precise Blades for All Hair Types</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(510)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦30800</a>
+              <a href="#" class="card-link ps-4 oldprice">₦32400</a>
+            </div>
+          </div>
+
+
+          <div class="card border-0" style="width: 19rem;">
+            <img src="Images/OTW-340-680-1.png" class="card-img-top backo" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="anime"><a href="#">Airbuds 4 ENC True Wireless Earbuds</a></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="Images/36-hr-long-playtime.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">38-Hr Long Playtime</span></li>
+              <li class="list-group-item"><img src="Images/customize-your-listening.svg" alt="" id="detaimg"><span
+                  class="voice ps-2">oraimo Sound APP</span></li>
+              <li class="list-group-item">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <img src="Images/fullstar.svg" alt="">
+                <span class="review">(51)</span>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link price">₦20500</a>
+              <a href="#" class="card-link ps-4 oldprice">₦30000</a>
+            </div>
+          </div>
+
+          <!-- End of third four cards -->
+
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev bttn" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next bttn2" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</div>
+</div>
 
   <!-- Awards and Certifications Banner -->
 
